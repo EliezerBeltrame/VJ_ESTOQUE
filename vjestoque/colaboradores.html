@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaboradores</title>
+
+    <link rel="stylesheet" href="css/colaboradores.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="topo">
+
+            <div>
+                <h1>Colaboradores</h1>
+                <p>Gerencie os funcionários da empresa</p>
+            </div>
+
+
+
+            <button class="btn-cadastrar" onclick="abrirModal()">
+                + Novo Colaborador
+            </button>
+
+        </div>
+
+        <div class="cards" id="listaColaboradores">
+
+            <div class="card">
+
+                <div class="icone">
+                    👤
+                </div>
+
+                <div>
+
+                    <h2>João Silva</h2>
+
+                    <span class="cargo admin">
+                        Administrador
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">
+                    👤
+                </div>
+
+                <div>
+
+                    <h2>Maria Souza</h2>
+
+                    <span class="cargo estoque">
+                        Estoquista
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="modal">
+
+        <div class="modal-conteudo">
+
+            <h2>Novo Colaborador</h2>
+
+            <input type="text" id="nome" placeholder="Nome do colaborador">
+
+            <select id="cargo">
+
+                <option value="Administrador">
+                    Administrador
+                </option>
+
+                <option value="Estoquista">
+                    Estoquista
+                </option>
+
+                <option value="Gerente">
+                    Gerente
+                </option>
+
+            </select>
+
+            <div class="acoes">
+
+                <button class="cancelar" onclick="fecharModal()">
+                    Cancelar
+                </button>
+
+                <button class="salvar" onclick="cadastrarColaborador()">
+                    Salvar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button class="voltar" onclick="voltar()">
+        Voltar
+    </button>
+
+    <script src="js/colaboradores.js"></script>
+    <script>
+
+        function voltar() {
+
+            window.location.href = 'index.html';
+        }
+
+    </script>
+
+</body>
+
+</html>

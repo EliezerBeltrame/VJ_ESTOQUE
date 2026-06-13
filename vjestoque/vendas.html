@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="css/vendas.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Registro de Vendas</h1>
+        <div class="formulario">
+            <select id="produto">
+                <option value="">
+                    Selecione o produto
+                </option>
+            </select>
+
+            <input type="number" id="quantidade" placeholder="Quantidade vendida">
+
+            <button onclick="registrarVenda()">
+                Registrar Venda
+            </button>
+
+            <button class="voltar" onclick="voltar()">
+                Voltar
+            </button>
+
+        </div>
+
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade Vendida</th>
+                        <th>Estoque Atual</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaVendas">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/vendas.js"></script>
+</body>
+</html>

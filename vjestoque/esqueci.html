@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Esqueci a Senha</title>
+    <link rel="stylesheet" href="css/esqueci.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Nova Senha</h1>
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Digite seu e-mail">
+
+        <input
+        type="password"
+        id="novaSenha"
+        placeholder="Nova senha">
+
+        <input
+        type="password"
+        id="confirmarSenha"
+        placeholder="Confirmar nova senha">
+
+        <button onclick="redefinirSenha()">
+
+            Alterar Senha
+
+        </button>
+        <button class="voltar"
+        onclick="voltar()">
+            Voltar
+        </button>
+    </div>
+    <script src="js/esqueci.js"></script>
+
+    <script>
+        function voltar(){
+
+            window.location.href =
+            'login.html';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    padding:40px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    margin-bottom:25px;
+}
+
+.tabela-form{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:30px;
+}
+
+.tabela-form table{
+    width:100%;
+}
+
+.tabela-form td{
+    padding:15px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#0f172a;
+    color:white;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.produtos{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.produtos table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:15px;
+    border-bottom:1px solid #334155;
+    text-align:left;
+}
+
+tr:hover{
+    background:#263245;
+}
+.voltar{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:20px;
+    width:auto;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.voltar:hover{
+    background:#1d4ed8;
+}
+select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#0f172a;
+    color:white;
+}

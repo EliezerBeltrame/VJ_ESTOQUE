@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJ ESTOQUE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="menu-lateral">
+
+        <div>
+
+            <div class="logo">
+
+                <img src="img/logo.png">
+
+                <h2>VJ ESTOQUE</h2>
+
+            </div>
+
+            <nav class="menu">
+                <a href="index.html" class="ativo">
+                     Estoque
+                </a>
+                <a href="cadastroprodutos.html">
+                     Cadastro
+                </a>
+                <a href="colaboradores.html">
+                     Colaboradores
+                </a>
+                <a href="fornecedores.html">
+                     Fornecedores
+                </a>
+                <a href="vendas.html">
+                     Vendas
+                </a>
+            </nav>
+        </div>
+        <button class="sair" onclick="sair()">
+            Sair
+        </button>
+    </aside>
+    <main>
+        <header class="topo">
+
+            <div>
+                <h1>
+                    Controle de Estoque
+                </h1>
+                <p>
+                    Gerencie produtos e vendas
+                </p>
+            </div>
+
+            <div class="usuario">
+
+                👤
+                <span id="nomeUsuario">
+                </span>
+            </div>
+
+        </header>
+        <section class="pesquisa">
+            <input type="text" placeholder="Buscar produto...">
+        </section>
+        <section class="cards">
+            <div class="card azul">
+                <h3>Produtos</h3>
+                <h1 id="totalProdutos">
+                    0
+                </h1>
+            </div>
+
+            <div class="card laranja">
+                <h3>Estoque Baixo</h3>
+                <h1 id="estoqueBaixo">
+                    0
+                </h1>
+
+        </section>
+        <section class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="estoqueTabela">
+                </tbody>
+
+            </table>
+            <div class="paginas">
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/estoque.js"></script>
+
+</body>
+
+</html>

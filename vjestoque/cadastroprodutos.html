@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Produtos</h1>
+
+        <div class="tabela-form">
+            <table>
+                <tr>
+                    <td>Nome do Produto</td>
+                    <td>
+                        <input type="text" id="nome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Categoria</td>
+                    <td>
+                        <select id="categoria">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Frutas">
+                                Frutas
+                            </option>
+
+                            <option value="Bebidas">
+                                Bebidas
+                            </option>
+
+                            <option value="Grãos">
+                                Grãos
+                            </option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quantidade</td>
+                    <td>
+                        <input type="number" id="quantidade">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Estoque Mínimo</td>
+                    <td>
+                        <input type="number" id="minimo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="cadastrarProduto()">
+                            Cadastrar Produto
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="produtos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                        <th>Mínimo</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaProdutos">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button class="voltar" onclick="voltar()">
+        Voltar
+    </button>
+    <script src="js/cadastro.js"></script>
+    <script>
+
+        function voltar() {
+
+            window.location.href = 'index.html';
+        }
+
+    </script>
+</body>
+
+</html>
